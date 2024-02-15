@@ -70,7 +70,7 @@ public class GameController implements Initializable {
             }
         }
         gameView.setBoardView(newBoard);
-        blackCapturesText.setText("Black captures: " + 2 + game.getBlackCaptures());
+        blackCapturesText.setText("Black captures: " + game.getBlackCaptures());
         whiteCapturesText.setText("White captures: " + game.getWhiteCaptures());
     }
 

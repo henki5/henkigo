@@ -163,7 +163,13 @@ public class Game {
     }
 
     private Player getOppositeColor(Player color) {
-        return (color == Player.BLACK) ? Player.WHITE : Player.BLACK;
+        if (color == Player.BLACK) {
+            return Player.WHITE;
+        }
+        else if (color == Player.WHITE) {
+            return Player.BLACK;
+        }
+        else return Player.EMPTY;
     }
 
     // Fetch all stones in group with a stone at (x,y).
